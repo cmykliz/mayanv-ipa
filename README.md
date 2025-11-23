@@ -1,6 +1,6 @@
-# IPA transcribed Mayan language corpora (forked from ["MayanV"](https://github.com/transducens/mayanv))
+# IPA transcribed Mayan language corpora (forked from [MayanV](https://github.com/transducens/mayanv))
 
-Using the `epitran` module's transliterate function (see forked ["epitran-mayan"](https://github.com/cmykliz/epitran-mayan)) to re-transcribe the orthographical representations of mayan language words into the international phonetic alphabet (IPA), the entire MayanV corpora is presented here for phonological interest.
+Using the `epitran` module's transliterate function (see forked [epitran-mayan](https://github.com/cmykliz/epitran-mayan)) to re-transcribe the orthographical representations of mayan language words into the international phonetic alphabet (IPA), the entire MayanV corpora is presented here for phonological interest.
 
 
 ```
