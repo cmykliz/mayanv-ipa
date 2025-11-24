@@ -13,12 +13,12 @@ def transcribe_file(filename):
     with open(filename, 'r', encoding="utf-8") as f:
         for line in f:
             line = line.rstrip('\n')
-            mayan_g2p.transliterate(line)
-            lines_ipa.append(line)
+            line_ipa = mayan_g2p.transliterate(line)
+            lines_ipa.append(line_ipa)
 
     with open(filename_ipa, "w", encoding="utf-8") as f_out:
         f_out.write("\n".join(lines_ipa))
-
+        
 if __name__ == "__main__":
     import sys
     if len(sys.argv) < 2:
