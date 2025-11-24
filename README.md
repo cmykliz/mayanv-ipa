@@ -2,25 +2,15 @@
 
 Using the `epitran` module's transliterate function (see forked [epitran-mayan](https://github.com/cmykliz/epitran-mayan)) to re-transcribe the orthographical representations of mayan language words into the international phonetic alphabet (IPA), the entire MayanV corpora is presented here for phonological interest.
 
+See the `transcriber.py` file for epitran-mayan transcription function.
 
 ```
-@inproceedings{lou-etal-2024-curated,
-    title = "Curated Datasets and Neural Models for Machine Translation of Informal Registers between {M}ayan and {S}panish Vernaculars",
-    author = "Lou, Andr{\'e}s  and
-      P{\'e}rez-Ortiz, Juan Antonio  and
-      S{\'a}nchez-Mart{\'\i}nez, Felipe  and
-      S{\'a}nchez-Cartagena, V{\'\i}ctor",
-    editor = "Duh, Kevin  and
-      Gomez, Helena  and
-      Bethard, Steven",
-    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
-    month = jun,
-    year = "2024",
-    address = "Mexico City, Mexico",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.naacl-long.156",
-    pages = "2838--2850",
-}
+# Example usage
+langs = os.listdir('../mayanv-ipa/MayanV') # Get dirs
+for lang in langs:
+    dev_dir = os.path.join('../mayanv-ipa/MayanV', lang, 'dev')
+    test_dir = os.path.join('../mayanv-ipa/MayanV', lang, 'test')
+    filename = "data." + lang
+    transcribe_file(os.path.join(dev_dir, filename))
+    transcribe_file(os.path.join(test_dir, filename))
 ```
-
-A `CITATION.cff` file is also included in this repository.
