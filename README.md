@@ -2,7 +2,7 @@
 
 Using the `epitran` module's transliterate function (see forked [epitran-mayan](https://github.com/cmykliz/epitran-mayan)) to re-transcribe the orthographical representations of mayan language words into the international phonetic alphabet (IPA), the entire MayanV corpora is presented here for phonological interest.
 
-See the `transcriber.py` file for epitran-mayan transcription function.
+See the [`transcribe-ipa.py`](https://github.com/cmykliz/mayanv-ipa/blob/master/transcribe-ipa.py) file for epitran-mayan transcription function.
 
 ```
 # Example usage
